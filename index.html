@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <!-- Core stylesheets -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <!-- Animation libraries -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  </head>
+  <body>
+    <!-- Scroll to top button -->
+    <div id="scroll-to-top" class="scroll-to-top">
+      <i class="fa-solid fa-chevron-up"></i>
+    </div>
+    <nav id="desktop-nav">
+      <div class="logo">Ala Sai Harsha</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Ala Sai Harsha</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section id="profile" class="fade-in">
+      <div class="section__pic-container grow-hover">
+        <img src="./assets/profile-pic-2.png" alt="Ala Sai Harsha profile picture" />
+      </div>
+      <div class="section__text slide-in">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Ala Sai Harsha</h1>
+        <p class="section__text__p1">Graduate Software Engineer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2 grow-hover"
+            onclick="window.open('./assets/Ala_Sai_Harsha.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1 grow-hover" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/sai-harsha-ala-370773239/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/SaiHarsha502vvit'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about" class="fade-in">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container grow-hover">
+          <img
+            src="./assets/about-pic.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container slide-in">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>Internships & Projects<br />Full Stack, AI/ML, Cloud</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Tech, Computer Science<br />Vasireddy Venkatadri Institute of Technology</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I am a Graduate Software Engineer with hands-on experience in full stack development, AI/ML, and cloud technologies. Skilled in Python, Node.js, React, FastAPI, and PostgreSQL. I am a quick learner, creative problem solver, and passionate about building impactful solutions. I have completed my B.Tech in Computer Science from Vasireddy Venkatadri Institute of Technology and have worked on several internships and projects in the field.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience" class="fade-in">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Full Stack & AI/ML</h2>
+            <div class="article-container">
+              <article class="animated-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Python <i class="fa-brands fa-python"></i></h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article class="animated-card" data-aos="fade-up" data-aos-delay="200">
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Node.js <i class="fa-brands fa-node-js"></i></h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article class="animated-card" data-aos="fade-up" data-aos-delay="300">
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>React <i class="fa-brands fa-react"></i></h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article class="animated-card" data-aos="fade-up" data-aos-delay="400">
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Express.js <i class="fa-brands fa-node"></i></h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article class="animated-card">
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>PostgreSQL</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article class="animated-card">
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Machine Learning</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article class="animated-card">
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>FastAPI & REST APIs</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend & Tools</h2>
+            <div class="article-container">
+              <article class="animated-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>HTML & CSS <i class="fa-brands fa-html5"></i> <i class="fa-brands fa-css3-alt"></i></h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article class="animated-card" data-aos="fade-up" data-aos-delay="200">
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Material UI <i class="fa-solid fa-palette"></i></h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article class="animated-card" data-aos="fade-up" data-aos-delay="300">
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Git <i class="fa-brands fa-git-alt"></i></h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects" class="fade-in">
+      <p class="section__text__p1" data-aos="fade-up">Browse My Recent</p>
+      <h1 class="title" data-aos="fade-up" data-aos-delay="100">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container grow-hover animated-card" data-aos="zoom-in" data-aos-delay="100">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="URL Shortener API"
+                class="project-img"
+              />
+              <div class="project-overlay">
+                <i class="fa-solid fa-link fa-3x"></i>
+              </div>
+            </div>
+            <h2 class="experience-sub-title project-title">URL Shortener API <i class="fa-solid fa-code"></i></h2>
+            <p class="project-desc">RESTful API using Node.js, Express, and MongoDB. Features URL shortening, analytics, and secure authentication. </p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn grow-hover"
+                onclick="location.href='https://github.com/SaiHarsha502vvit/url-shortner-Api'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container grow-hover animated-card" data-aos="zoom-in" data-aos-delay="200">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="FlavorFind AI"
+                class="project-img"
+              />
+              <div class="project-overlay">
+                <i class="fa-solid fa-robot fa-3x"></i>
+              </div>
+            </div>
+            <h2 class="experience-sub-title project-title">FlavorFind AI <i class="fa-solid fa-utensils"></i></h2>
+            <p class="project-desc">AI-powered recipe recommendation platform. React frontend, FastAPI backend, ML-based suggestions, and real-time search.</p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn grow-hover"
+                onclick="location.href='https://github.com/SaiHarsha502vvit/FlavorFind-AI'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn grow-hover"
+                onclick="location.href='https://flavorfind-ai.netlify.app/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container grow-hover animated-card" data-aos="zoom-in" data-aos-delay="300">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="College Web Portal"
+                class="project-img"
+              />
+              <div class="project-overlay">
+                <i class="fa-solid fa-graduation-cap fa-3x"></i>
+              </div>
+            </div>
+            <h2 class="experience-sub-title project-title">College Web Portal <i class="fa-solid fa-school"></i></h2>
+            <p class="project-desc">Web portal for college management. Built with React, Node.js, and PostgreSQL. Includes attendance, grades, and event scheduling.</p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn grow-hover"
+                onclick="location.href='https://github.com/SaiHarsha502vvit/College-Web'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#certifications'"
+      />
+    </section>
+    <section id="certifications" class="fade-in">
+      <p class="section__text__p1">My</p>
+      <h1 class="title">Certifications & Achievements</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container grow-hover animated-card">
+            <h2 class="experience-sub-title">Certifications</h2>
+            <ul id="certifications-list" class="cert-list sortable-list">
+              <li class="animated-card" data-aos="fade-right" data-aos-delay="100"><span class="cert-badge"><i class="fa-solid fa-certificate fa-bounce"></i> Programming with JavaScript by Meta</span><br><a href="https://coursera.org/share/b6afcb232efaff52f5a2cb2ee9b26092" target="_blank" rel="noopener">View Certificate</a></li>
+              <li class="animated-card" data-aos="fade-right" data-aos-delay="200"><span class="cert-badge"><i class="fa-solid fa-graduation-cap fa-bounce"></i> Machine Learning, ML by KTH, The Royal Institute Of Technology, Sweden</span><br><a href="https://drive.google.com/file/d/1V4K5HGOBBr0LhGG6dTZgxpR5eDtBU64W/view?usp=sharing" target="_blank" rel="noopener">View Certificate</a></li>
+            </ul>
+            <p class="drag-instruction"><i class="fa-solid fa-hand-pointer fa-bounce"></i> Drag to reorder</p>
+          </div>
+          <div class="details-container color-container grow-hover animated-card">
+            <h2 class="experience-sub-title">Achievements</h2>
+            <ul id="achievements-list" class="cert-list sortable-list">
+              <li class="animated-card" data-aos="fade-left" data-aos-delay="100"><span class="cert-badge"><i class="fa-solid fa-trophy fa-bounce"></i> Top 10% of Teams, SRM-AP 24hrs Hackathon (March 2024)</span></li>
+              <li class="animated-card" data-aos="fade-left" data-aos-delay="200"><span class="cert-badge"><i class="fa-solid fa-star fa-bounce"></i> Story Writer & Actor, CSE Department Theater's Day (March 2024)</span></li>
+            </ul>
+            <p class="drag-instruction"><i class="fa-solid fa-hand-pointer fa-bounce"></i> Drag to reorder</p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact" class="fade-in">
+      <p class="section__text__p1" data-aos="fade-up">Get in Touch</p>
+      <h1 class="title" data-aos="fade-up" data-aos-delay="100">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container animated-card" data-aos="zoom-in" data-aos-delay="300">
+          <i class="fa-brands fa-linkedin fa-2x contact-icon"></i>
+          <p><a href="https://www.linkedin.com/in/sai-harsha-ala-370773239/" class="contact-link" target="_blank" rel="noopener">LinkedIn</a></p>
+        </div>
+        <div class="contact-info-container animated-card" data-aos="zoom-in" data-aos-delay="400">
+          <i class="fa-brands fa-github fa-2x contact-icon"></i>
+          <p><a href="https://github.com/SaiHarsha502vvit" class="contact-link" target="_blank" rel="noopener">GitHub</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2025 Ala Sai Harsha. All Rights Reserved.</p>
+    </footer>
+    <!-- JavaScript libraries -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.15.0/Sortable.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
